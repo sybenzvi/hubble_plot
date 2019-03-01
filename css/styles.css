@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html, body {
+  height: 100%;
+  background-color: rgb(219, 222, 210);
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;        /* Auto sticks footer to bottom */
+  height: 100%;
+  width: 980px;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  margin: 0 auto -2em;            /* Set margin value = -(footer height) */
+
+  background-color: #fff;
+}
+
+.content {
+  float: left;
+  width: 980px;
+  padding-bottom: 2em;  /* Extra padding for footer */
+
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 0.95em;
+}
+
+.content p {
+  padding: 10px;
+  font-size: 0.95em;
+  line-height: 1.6em;
+}
+
+.content ol, .content ul {
+  padding-left: 2.5em;
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.content dl {
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.content dt {
+  font-weight: bold;
+}
+
+.content dd {
+  padding-bottom: 1em;
+}
+
+.content li ul {
+  padding-bottom: 0;
+}
+
+.content form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  text-align: left;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+.content input {
+  width: 100%;
+  border: 1px solid #777;
+}
+
+.content textarea {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #777;
+}
+
+.content a {
+  color: #bd3976;
+  text-decoration: none;
+}
+
+.content a:visited {
+  color: #64187c;
+}
+
+.content a:hover, .content a:focus {
+  color: #f0900e;
+}
+
+.content h1, .content h2, .content h3, .content h4 {
+  padding: 10px;
+  line-height: 1em;
+}
+
