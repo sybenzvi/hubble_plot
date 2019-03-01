@@ -82,13 +82,14 @@
   echo "   <tr><td><strong>Seen</strong><br/><strong>Brightness</strong></td><td>" . $S . " W m<sup>-2</sup> </td></tr>";
   echo "   <tr><td><strong>Emitted</strong><br/><strong>Brightness</strong></td><td>" . $E . " W </td></tr>";
   echo "   </table><br/>";
+  echo "  <div style=\"width:50%\">";
+  echo "   <p style=\"text-align:left\">Enter the value of the H&alpha; line for this spectrum. You can drag the mouse over part of the spectrum to zoom. Left click to pick out a wavelength. </p>";
+  echo "  </div>";
   echo "   <div id=\"chartContainer\" style=\"height: 300px; width:600px;
   border:1px solid #000;\"></div>";
-  echo "   <script src=\"https://canvasjs.com/assets/script/canvasjs.min.js\"></script>";
+  echo "   <script src=\"https://canvasjs.com/assets/script/canvasjs.min.js\"></script><br/>";
   echo " ";
   echo "   <div style=\"width:50%\">";
-  echo "   <p style=\"text-align:left\">Enter the value of the H&alpha; line for this";
-  echo "   spectrum. You can drag the mouse over part of the spectrum to zoom. Left click to pick out a wavelength. </p>";
   echo " ";
   echo "   <form name=\"Ha\" style=\"padding:10px; background-color:#eee; width:300px; border:1px solid\" action=\"\">";
   echo "   <table cellpadding=\"3px\">";
