@@ -85,16 +85,23 @@
   echo "  <div style=\"width:50%\">";
   echo "   <p style=\"text-align:left\">Enter the value of the H&alpha; line for this spectrum. You can drag the mouse over part of the spectrum to zoom. Left click to pick out a wavelength. </p>";
   echo "  </div>";
+  /*
+   * Container displaying the spectrum.
+   */
   echo "   <div id=\"chartContainer\" style=\"height: 300px; width:600px;
   border:1px solid #000;\"></div>";
   echo "   <script src=\"https://canvasjs.com/assets/script/canvasjs.min.js\"></script><br/>";
   echo " ";
   echo "   <div style=\"width:50%\">";
   echo " ";
-  echo "   <form name=\"Ha\" style=\"padding:10px; background-color:#eee; width:300px; border:1px solid\" action=\"\">";
+  /*
+   * Form input for spectrum Ha line, seen brightness,
+   * and emitted brightness.
+   */
+  echo "   <form name=\"Ha\" method=\"post\" style=\"padding:10px; background-color:#eee; width:300px; border:1px solid\" action=\"index.php\">";
   echo "   <table cellpadding=\"3px\">";
   echo "     <tr><td><label for=\"wavelength\" style=\"color:#ff0000;\">H&alpha; line [angstrom]: </label></td>";
-  echo "     <td><input name=\"wavelength\" type=\"number\" step=\"0.1\" min=\"6500\" max=\"9000\" value=\"6530\"></td></tr>";
+  echo "     <td><input name=\"wavelength\" type=\"number\" step=\"0.1\" min=\"6500\" max=\"9000\" value=\"6563\"></td></tr>";
   echo "     <tr><td><label for=\"brightS\" style=\"color:#ff0000;\">Brightness <em>S</em> [10<sup>-15</sup> W m<sup>-2</sup>]: </label></td>";
   echo "     <td><input name=\"brightS\" type=\"number\" step=\"0.001\" min=\"1\" max=\"1000\" value=\"" . $S * 1e15 . "\"></td></tr>";
   echo "     <tr><td><label for=\"brightE\" style=\"color:#ff0000;\">Brightness <em>E</em> [10<sup>37</sup> W]: </label></td>";
